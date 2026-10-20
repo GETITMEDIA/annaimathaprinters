@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Menu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #eee;
+      display: flex;
+      padding: 10px 20px;
+      align-items: center;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      position: relative;
+    }
+
+    /* Highlight active tab */
+    nav a.active {
+      color: #d6931d; /* orange for Multicolour Offset Printing */
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #0b1c2b;
+      color: white;
+      padding: 20px;
+      min-width: 700px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      z-index: 999;
+    }
+
+    .dropdown-content a {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: grid;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Profile</a>
+  
+  <div class="dropdown">
+    <a href="#" class="active">Multicolour Offset Printing</a>
+    <div class="dropdown-content">
+      <div>
+        <a href="#">Cartons & Boxes</a>
+        <a href="#">Paper Carry Bags</a>
+        <a href="#">Stickers and Labels</a>
+        <a href="#">Blister Cards</a>
+        <a href="#">Coffee Table Books</a>
+        <a href="#">Soft and Hard Cover Books</a>
+        <a href="#">Visual Aid Book</a>
+      </div>
+      <div>
+        <a href="#">Children's Board Book</a>
+        <a href="#">Catalogues</a>
+        <a href="#">Brochures</a>
+        <a href="#">Danglers</a>
+        <a href="#">Invitations</a>
+        <a href="#">Diaries and Planners</a>
+        <a href="#">Calendars</a>
+      </div>
+      <div>
+        <a href="#">Index Cut Books</a>
+        <a href="#">Folders and Stationery</a>
+        <a href="#">Board Games and Jigsaw Puzzles</a>
+        <a href="#">Scratch Cards</a>
+        <a href="#">Cutting Wheel Labels</a>
+        <a href="#">Garment Tags</a>
+      </div>
+    </div>
+  </div>
+
+  <a href="#">UV Printing</a>
+  <a href="#">Foil Printing & Embossing</a>
+  <a href="#">Digital Printing</a>
+  <a href="#">Contact</a>
+</nav>
+
+</body>
+</html>

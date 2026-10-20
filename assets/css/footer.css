@@ -1,0 +1,13 @@
+.two-column-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style: none;
+    padding-left: 0;
+    width: 390px;
+}
+
+.two-column-list li {
+    margin-bottom: 8px;
+}
+ 
