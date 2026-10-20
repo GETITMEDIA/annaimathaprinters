@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
-Sitemap: https://annaimathaprinters.com/?sitemap.xml
+
+# Disallow non-indexable utility pages
+Disallow: /404.html
+Disallow: /checkout.html
+Disallow: /service01.html
+
+Sitemap: https://annaimathaprinters.com/sitemap.xml
