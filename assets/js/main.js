@@ -8,6 +8,11 @@
 
     $(document).ready( function() {
 
+    //>> Dynamic Copyright Year Start <<//
+    var currentYear = new Date().getFullYear();
+    $(".current-year, #current-year").text(currentYear);
+
+
     //>> Mobile Menu Js Start <<//
     $('#mobile-menu').meanmenu({
         meanMenuContainer: '.mobile-menu',
